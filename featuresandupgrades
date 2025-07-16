@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features & Upgrades | Verandas & Carports</title>
+    <meta name="description" content="Discover optional upgrades for our verandas and glass rooms, including LED lighting and infrared heaters.">
+    <meta name="keywords" content="veranda upgrades, glass room features, outdoor heating, LED lighting">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        header { background-color: #4A4A4A; color: white; text-align: center; padding: 2rem; }
+        .features { padding: 2rem; max-width: 1200px; margin: auto; }
+        .features h2 { text-align: center; margin-bottom: 1rem; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature-card { border: 1px solid #ddd; padding: 1rem; text-align: center; }
+        footer { background-color: #4A4A4A; color: white; text-align: center; padding: 1rem; width: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verandas & Carports</h1>
+        <p>Enhance Your Outdoor Living with Our Features</p>
+    </header>
+    <section class="features">
+        <h2>Features & Upgrades</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>LED RGBW Lighting</h3>
+                <p>Remote-controlled LED lighting with smart receiver options for vibrant, customizable ambiance.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Infrared Heaters</h3>
+                <p>High-efficiency heaters with a 5-year warranty, perfect for year-round outdoor comfort.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Victorian Upgrade</h3>
+                <p>Add a classic aesthetic to your Simplicity Xtra Veranda with this optional design upgrade.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Toughened Glass</h3>
+                <p>Choose 6mm or 8mm toughened glass with UV self-cleaning properties for durability and clarity.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Verandas & Carports. All rights reserved.</p>
+        <p>Contact us: [Your Contact Information]</p>
+    </footer>
+</body>
+</html>
