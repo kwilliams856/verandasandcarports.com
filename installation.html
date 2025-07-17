@@ -1,48 +1,87 @@
 <!DOCTYPE html>
-       <html lang="en">
-       <head>
-           <meta charset="UTF-8">
-           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-           <title>Verandas & Carports - Installation</title>
-           <meta name="description" content="Step-by-step installation guide for Verandas & Carports products.">
-           <meta name="keywords" content="veranda installation, glass room setup, DIY guide">
-           <style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verandas & Carports - Installation</title>
+    <meta name="description" content="Get installation guides for our verandas and carports.">
+    <meta name="keywords" content="installation, guides, verandas, carports">
+    <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
-        header { background-color: #000080; color: white; text-align: center; padding: 2rem; }
-        nav { background-color: #ADD8E6; padding: 1rem; }
-        nav a { color: #000080; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        header { background-color: #000080; color: white; text-align: center; padding: 1rem; position: sticky; top: 0; z-index: 1000; }
+        nav { background-color: #ADD8E6; padding: 0.5rem; text-align: center; }
+        nav a { color: #000080; margin: 0 10px; text-decoration: none; font-weight: bold; font-size: 1rem; }
         nav a:hover { text-decoration: underline; }
-        main { padding: 2rem; text-align: center; }
-        footer { background-color: #000080; color: white; text-align: center; padding: 1rem; }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ADD8E6;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #000080;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.9rem;
+        }
+        .dropdown-content a:hover { background-color: #000080; color: white; }
+        main { padding: 1rem; text-align: center; }
+        .cta-button { display: inline-block; background-color: #000080; color: white; padding: 0.5rem 1rem; text-decoration: none; font-weight: bold; margin-top: 1rem; border-radius: 5px; }
+        .cta-button:hover { background-color: #ADD8E6; color: #000080; }
+        footer { background-color: #000080; color: white; text-align: center; padding: 1rem; font-size: 0.9rem; }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header { padding: 0.5rem; }
+            nav { padding: 0.25rem; }
+            nav a { margin: 0 5px; font-size: 0.9rem; }
+            .dropdown-content { min-width: 100px; }
+            .dropdown-content a { padding: 6px 10px; font-size: 0.8rem; }
+            .cta-button { font-size: 0.9rem; padding: 0.4rem 0.8rem; }
+            main { padding: 0.5rem; }
+        }
     </style>
-       </head>
-       <body>
-           <header>
-               <h1>Verandas & Carports</h1>
-           </header>
-           <nav>
-               <a href="index.html">Home</a>
-               <a href="products.html">Products</a>
-               <a href="about.html">About</a>
-               <a href="installation.html">Installation</a>
-               <a href="contact.html">Contact</a>
-           </nav>
-           <main>
-               <h2>Installation Guide</h2>
-               <p>Our verandas and glass rooms are supplied with detailed installation instructions. Follow these steps:</p>
-               <ol>
-                   <li>Prepare your site with a level base (concrete or paving recommended).</li>
-                   <li>Assemble the frame using the provided hardware, starting with the main supports.</li>
-                   <li>Attach the roof panels or glass sections securely.</li>
-                   <li>Check alignment and fasten all connections.</li>
-                   <li>Contact our online support for any assistance: info@verandasandcarports.com.</li>
-               </ol>
-               <p>Tools required: Drill, level, wrench. Always wear safety gear.</p>
-           </main>
-           <footer>
-               <p>© 2025 Verandas & Carports. All rights reserved.</p>
-               <p>Contact us: info@verandasandcarports.com | 123-456-7890</p>
-               <p>Supply-only products with comprehensive installation guides and online support.</p>
-           </footer>
-       </body>
-       </html>
+</head>
+<body>
+    <header>
+        <h1>Verandas & Carports</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="products.html" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+                <a href="carports.html">Carports</a>
+                <a href="verandas.html">Verandas</a>
+            </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="installation.html">Installation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Installation Guides</h2>
+        <p>Find detailed instructions to install your verandas and carports. Contact us for support if needed.</p>
+        <ul>
+            <li>Step-by-step guides included with every product.</li>
+            <li>Video tutorials available online.</li>
+        </ul>
+        <a href="tel:123-456-7890" class="cta-button">Call Now</a>
+    </main>
+    <footer>
+        <p>© 2025 Verandas & Carports. All rights reserved.</p>
+        <p>Contact us: info@verandasandcarports.com | 123-456-7890</p>
+        <p>Supply-only products with comprehensive installation guides and online support.</p>
+    </footer>
+</body>
+</html>
