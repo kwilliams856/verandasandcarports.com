@@ -1,41 +1,83 @@
 <!DOCTYPE html>
-       <html lang="en">
-       <head>
-           <meta charset="UTF-8">
-           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-           <title>Verandas & Carports - About</title>
-           <meta name="description" content="Learn about Verandas & Carports, your source for premium UK-made verandas and glass rooms.">
-           <meta name="keywords" content="about verandas, glass rooms, UK manufacturer">
-           <style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verandas & Carports - About</title>
+    <meta name="description" content="Learn about Verandas & Carports and our mission.">
+    <meta name="keywords" content="about, company, mission, UK">
+    <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
-        header { background-color: #000080; color: white; text-align: center; padding: 2rem; }
-        nav { background-color: #ADD8E6; padding: 1rem; }
-        nav a { color: #000080; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        header { background-color: #000080; color: white; text-align: center; padding: 1rem; position: sticky; top: 0; z-index: 1000; }
+        nav { background-color: #ADD8E6; padding: 0.5rem; text-align: center; }
+        nav a { color: #000080; margin: 0 10px; text-decoration: none; font-weight: bold; font-size: 1rem; }
         nav a:hover { text-decoration: underline; }
-        main { padding: 2rem; text-align: center; }
-        footer { background-color: #000080; color: white; text-align: center; padding: 1rem; }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ADD8E6;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #000080;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.9rem;
+        }
+        .dropdown-content a:hover { background-color: #000080; color: white; }
+        main { padding: 1rem; text-align: center; }
+        .cta-button { display: inline-block; background-color: #000080; color: white; padding: 0.5rem 1rem; text-decoration: none; font-weight: bold; margin-top: 1rem; border-radius: 5px; }
+        .cta-button:hover { background-color: #ADD8E6; color: #000080; }
+        footer { background-color: #000080; color: white; text-align: center; padding: 1rem; font-size: 0.9rem; }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header { padding: 0.5rem; }
+            nav { padding: 0.25rem; }
+            nav a { margin: 0 5px; font-size: 0.9rem; }
+            .dropdown-content { min-width: 100px; }
+            .dropdown-content a { padding: 6px 10px; font-size: 0.8rem; }
+            .cta-button { font-size: 0.9rem; padding: 0.4rem 0.8rem; }
+            main { padding: 0.5rem; }
+        }
     </style>
-       </head>
-       <body>
-           <header>
-               <h1>Verandas & Carports</h1>
-           </header>
-           <nav>
-               <a href="index.html">Home</a>
-               <a href="products.html">Products</a>
-               <a href="about.html">About</a>
-               <a href="installation.html">Installation</a>
-               <a href="contact.html">Contact</a>
-           </nav>
-           <main>
-               <h2>About Us</h2>
-               <p>Verandas & Carports is a UK-based company specializing in premium, weather-resistant verandas and glass rooms. We pride ourselves on our supply-only model, providing high-quality aluminium structures with clear installation instructions and dedicated online support.</p>
-               <p>Our products, including the Contemporary Glass Room and Simplicity Xtra Glass Veranda, are designed to enhance your outdoor living space with style and durability.</p>
-           </main>
-           <footer>
-               <p>© 2025 Verandas & Carports. All rights reserved.</p>
-               <p>Contact us: info@verandasandcarports.com | 123-456-7890</p>
-               <p>Supply-only products with comprehensive installation guides and online support.</p>
-           </footer>
-       </body>
-       </html>
+</head>
+<body>
+    <header>
+        <h1>Verandas & Carports</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="products.html" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+                <a href="carports.html">Carports</a>
+                <a href="verandas.html">Verandas</a>
+            </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="installation.html">Installation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>About Us</h2>
+        <p>We are Verandas & Carports, dedicated to providing high-quality outdoor solutions across the UK. Our mission is to enhance your living spaces with durable, easy-to-install products.</p>
+        <a href="tel:123-456-7890" class="cta-button">Call Now</a>
+    </main>
+    <footer>
+        <p>© 2025 Verandas & Carports. All rights reserved.</p>
+        <p>Contact us: info@verandasandcarports.com | 123-456-7890</p>
+        <p>Supply-only products with comprehensive installation guides and online support.</p>
+    </footer>
+</body>
+</html>
